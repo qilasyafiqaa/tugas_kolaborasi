@@ -31,6 +31,8 @@ section{
   color: #333 !important;
 }
 
+
+
 .hero{
   background: linear-gradient(to right,#f8ecf5,#f2cce9);
   min-height: 100vh;
@@ -201,4 +203,53 @@ footer{
   text-align: center;
   color: #777;
   font-size: 14px;
+}
+
+/* DARK MODE */
+
+.dark-mode{
+  background: #121212 !important;
+  color: white !important;
+}
+
+.dark-mode .navbar{
+  background: #1f1f1f !important;
+}
+
+.dark-mode .nav-link,
+.dark-mode .navbar-brand,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode p{
+  color: white !important;
+}
+
+.dark-mode .hero{
+  background: linear-gradient(to right,#1a1a1a,#2b2b2b) !important;
+}
+
+.dark-mode .about-box,
+.dark-mode .project-card,
+.dark-mode .contact-box{
+  background: #222 !important;
+  color: white !important;
+}
+
+.dark-mode .skills,
+.dark-mode .contact{
+  background: #181818 !important;
+}
+
+.dark-mode .form-control{
+  background: #333 !important;
+  color: white !important;
+  border: none;
+}
+
+.dark-mode footer{
+  background: #393838 !important;
+  color: #aaa !important;
 }
