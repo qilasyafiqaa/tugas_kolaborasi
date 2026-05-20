@@ -7,7 +7,36 @@ document.getElementById("contactForm").addEventListener("submit", function(e){
   alert("Pesan berhasil dikirim!");
 
 });
+/* =========================
+      FOOTER ANIMATION
+========================= */
 
+const footer = document.querySelector(".footer-section");
+
+window.addEventListener("scroll", () => {
+
+  const footerTop = footer.getBoundingClientRect().top;
+  const screenPosition = window.innerHeight / 1.2;
+
+  if(footerTop < screenPosition){
+    footer.classList.add("show");
+  }
+
+});
+
+/* =========================
+      NEWSLETTER BUTTON
+========================= */
+
+const form = document.querySelector(".newsletter");
+
+form.addEventListener("submit", function(e){
+
+  e.preventDefault();
+
+  alert("Thank you for subscribing ✨");
+
+});
 
 // ================= DARK MODE =================
 
