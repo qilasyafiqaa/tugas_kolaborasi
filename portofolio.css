@@ -5,13 +5,13 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body{
+.body{
   background: #f7f3f7;
   color: #222;
   font-family: Arial, sans-serif;
 }
 
-section{
+.section{
   padding: 80px 0;
 }
 
@@ -93,7 +93,45 @@ section{
   font-weight: 600;
   margin-bottom: 10px;
 }
+ 
+ .type-ismu {
+  display: inline-block;
+  width: 0;
+  vertical-align: bottom;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #00f2ff;
+  animation: 
+    typing-ismu 2s steps(10, end) forwards,
+    blink-caret 0.75s step-end infinite;
+}
 
+@keyframes typing-ismu {
+  from { width: 0; }
+  to { width: 10.5ch; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #00f2ff }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes glow-text {
+  from { text-shadow: 0 0 10px rgba(0, 242, 255, 0.5); }
+  to { text-shadow: 0 0 25px rgba(0, 242, 255, 0.9), 0 0 10px rgba(0, 242, 255, 0.6); }
+}
+ 
 /* ROBOT IMAGE */
 .robot-img{
   width: 250px;
@@ -198,7 +236,7 @@ section{
   padding: 12px;
 }
 
-footer{
+.footer{
   padding: 20px;
   text-align: center;
   color: #777;
